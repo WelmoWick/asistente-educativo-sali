@@ -6,7 +6,7 @@
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <div class="brand">
-        <span class="brand-logo" aria-hidden="true">🎓</span>
+        <span class="brand-logo" aria-hidden="true">🤖</span>
         <span class="brand-name">SALI — Asistente Educativo</span>
       </div>
 
@@ -268,6 +268,8 @@
 /* global defineOptions */
 defineOptions({ name: 'SALI_Landing' });
 
+import { reactive, ref } from 'vue';
+
 const demoUrl = 'https://asistente-educativo-sali.vercel.app';
 const driveUrl = 'https://drive.google.com/drive/folders/14jt4USrqAt03RYeWelzmzx1ZJO1k-2Xi?usp=sharing';
 const whatsUrl = 'https://wa.me/573142802136';
@@ -316,7 +318,6 @@ const faq = [
 let openIndex = -1;
 function onToggle(i, evt) { openIndex = evt.target.open ? i : (openIndex === i ? -1 : openIndex); }
 
-import { reactive, ref } from 'vue';
 const form = reactive({ nombre: '', email: '', telefono: '', colegio: '', mensaje: '' });
 const submitted = ref(false);
 
@@ -337,16 +338,16 @@ function handleSubmit() {
 </script>
 
 <style scoped>
-:root {
-  --bg: #0b1220;
-  --bg-alt: #0d1527;
-  --card: #111a2e;
-  --text: #e6eefc;
-  --muted: #aab8d0;
-  --primary: #1e3a8a;
-  --primary-2: #0ea5e9;
-  --ring: rgba(14, 165, 233, 0.35);
-}
+  :root {
+    --bg: #0e1628;
+    --bg-alt: #152036;
+    --card: #1a273d;
+    --text: #e6eefc;
+    --muted: #aab8d0;
+    --primary: #1e3a8a;
+    --primary-2: #0ea5e9;
+    --ring: rgba(14, 165, 233, 0.35);
+  }
 
 * { box-sizing: border-box; }
 html, body, :host { background: var(--bg); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
@@ -366,7 +367,7 @@ h3 { font-size: clamp(18px, 2.2vw, 24px); }
 .subtitle { color: var(--muted); margin: 8px 0 16px; }
 
 /* Header */
-.site-header { position: sticky; top: 0; z-index: 20; background: rgba(24, 35, 55, 0.85); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,.06); }
+  .site-header { position: sticky; top: 0; z-index: 20; background: rgba(24, 35, 55, 0.7); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,.06); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
 .brand { display: flex; align-items: center; gap: 8px; font-weight: 700; }
 .brand-logo { font-size: 20px; }
@@ -385,7 +386,7 @@ h3 { font-size: clamp(18px, 2.2vw, 24px); }
   border-radius: 10px; background: var(--card); border: 1px solid rgba(255,255,255,.08);
   box-shadow: 0 4px 16px rgba(0,0,0,.25);
 }
-.icon-btn:hover { background: #0e1a33; }
+  .icon-btn:hover { background: #16284a; }
 .icon-svg { width: 20px; height: 20px; }
 .icon-whatsapp { fill: #25D366; }
 
@@ -411,13 +412,13 @@ h3 { font-size: clamp(18px, 2.2vw, 24px); }
 .hero-bullets { margin: 8px 0 20px; padding-left: 18px; color: var(--text); }
 .cta-group { display: flex; gap: 12px; flex-wrap: wrap; }
 .hero-media { display: flex; justify-content: center; }
-.mockup-chat {
-  width: 100%; max-width: 420px; background: #14243d; border: 1px solid rgba(255,255,255,.06);
-  border-radius: 16px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.25);
-}
-.bubble { padding: 10px 12px; border-radius: 12px; margin: 8px 0; line-height: 1.35; }
-.bubble-in { background: #1b2f5a; align-self: flex-start; }
-.bubble-out { background: #16375a; border-left: 3px solid var(--primary-2); }
+  .mockup-chat {
+    width: 100%; max-width: 420px; background: #1b2e4e; border: 1px solid rgba(255,255,255,.06);
+    border-radius: 16px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  }
+  .bubble { padding: 10px 12px; border-radius: 12px; margin: 8px 0; line-height: 1.35; }
+  .bubble-in { background: #223c6a; align-self: flex-start; }
+  .bubble-out { background: #1e466d; border-left: 3px solid var(--primary-2); }
 
 /* Cards / Grid */
 .grid { display: grid; gap: 16px; }
@@ -468,10 +469,10 @@ details[open] .marker { transform: rotate(45deg); }
 .form { margin-top: 10px; }
 .form-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 .field { display: grid; gap: 6px; margin-bottom: 12px; }
-.field input, .field textarea {
-  width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,.1);
-  background: #16263f; color: var(--text);
-}
+  .field input, .field textarea {
+    width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,.1);
+    background: #1f3255; color: var(--text);
+  }
 .field input:focus, .field textarea:focus { outline: 3px solid var(--ring); border-color: var(--primary-2); }
 .form-actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
 .form-feedback { color: #b7ffb7; }
