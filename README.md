@@ -1,5 +1,6 @@
-<<<<<<< HEAD
-# asistente-virtual-sali
+# asistente-educativo-sali
+
+Landing page for SALI, an educational assistant that streamlines school communications through WhatsApp.
 
 ## Project setup
 ```
@@ -23,6 +24,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
-# asistente-educativo-sali
->>>>>>> 5f98d6c141a354385f305cdb3bced84766e568db
