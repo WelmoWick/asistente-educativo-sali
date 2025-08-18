@@ -35,10 +35,7 @@
             title="Google Drive"
           >
             <svg class="icon-svg icon-drive" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="#0F9D58" d="M3.5 2l5.5 9.5L3.5 21h5.5L15 11.5 9.5 2H3.5z"/>
-              <path fill="#F4B400" d="M9.5 2L15 11.5l5.5-9.5H9.5z"/>
-              <path fill="#1A73E8" d="M15 11.5l-5.5 9.5H15V11.5z"/>
-              <path fill="#EA4335" d="M15 11.5V21h6l-6-9.5z"/>
+              <path d="M3.5 2l5.5 9.5L3.5 21h5.5L15 11.5 9.5 2H3.5zm6 0L15 11.5l5.5-9.5H9.5zm5.5 9.5L9.5 21H21l-6-9.5z" />
             </svg>
           </a>
 
