@@ -339,9 +339,9 @@ function handleSubmit() {
 
 <style scoped>
   :root {
-    --bg: #0e1628;
-    --bg-alt: #152036;
-    --card: #1a273d;
+    --bg: #111a2e;
+    --bg-alt: #18253d;
+    --card: #1f2e4a;
     --text: #e6eefc;
     --muted: #aab8d0;
     --primary: #1e3a8a;
@@ -367,7 +367,7 @@ h3 { font-size: clamp(18px, 2.2vw, 24px); }
 .subtitle { color: var(--muted); margin: 8px 0 16px; }
 
 /* Header */
-  .site-header { position: sticky; top: 0; z-index: 20; background: rgba(24, 35, 55, 0.7); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,.06); }
+  .site-header { position: sticky; top: 0; z-index: 20; background: rgba(32, 45, 70, 0.7); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,.06); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
 .brand { display: flex; align-items: center; gap: 8px; font-weight: 700; }
 .brand-logo { font-size: 20px; }
@@ -386,7 +386,7 @@ h3 { font-size: clamp(18px, 2.2vw, 24px); }
   border-radius: 10px; background: var(--card); border: 1px solid rgba(255,255,255,.08);
   box-shadow: 0 4px 16px rgba(0,0,0,.25);
 }
-  .icon-btn:hover { background: #16284a; }
+  .icon-btn:hover { background: #1d3c6b; }
 .icon-svg { width: 20px; height: 20px; }
 .icon-whatsapp { fill: #25D366; }
 
@@ -412,13 +412,13 @@ h3 { font-size: clamp(18px, 2.2vw, 24px); }
 .hero-bullets { margin: 8px 0 20px; padding-left: 18px; color: var(--text); }
 .cta-group { display: flex; gap: 12px; flex-wrap: wrap; }
 .hero-media { display: flex; justify-content: center; }
-  .mockup-chat {
-    width: 100%; max-width: 420px; background: #1b2e4e; border: 1px solid rgba(255,255,255,.06);
-    border-radius: 16px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.25);
-  }
-  .bubble { padding: 10px 12px; border-radius: 12px; margin: 8px 0; line-height: 1.35; }
-  .bubble-in { background: #223c6a; align-self: flex-start; }
-  .bubble-out { background: #1e466d; border-left: 3px solid var(--primary-2); }
+    .mockup-chat {
+      width: 100%; max-width: 420px; background: #223a60; border: 1px solid rgba(255,255,255,.06);
+      border-radius: 16px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    .bubble { padding: 10px 12px; border-radius: 12px; margin: 8px 0; line-height: 1.35; }
+    .bubble-in { background: #264a80; align-self: flex-start; }
+    .bubble-out { background: #25537f; border-left: 3px solid var(--primary-2); }
 
 /* Cards / Grid */
 .grid { display: grid; gap: 16px; }
@@ -471,7 +471,7 @@ details[open] .marker { transform: rotate(45deg); }
 .field { display: grid; gap: 6px; margin-bottom: 12px; }
   .field input, .field textarea {
     width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,.1);
-    background: #1f3255; color: var(--text);
+    background: #223a60; color: var(--text);
   }
 .field input:focus, .field textarea:focus { outline: 3px solid var(--ring); border-color: var(--primary-2); }
 .form-actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
