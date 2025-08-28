@@ -22,7 +22,6 @@
             <li><a href="#como-funciona" @click="mobileOpen=false">Cómo funciona</a></li>
             <li><a href="#tecnologia" @click="mobileOpen=false">Tecnología</a></li>
             <li><a href="#faq" @click="mobileOpen=false">FAQ</a></li>
-            <li><a class="btn btn-primary btn-small" href="#contacto" @click="mobileOpen=false">Solicitar demo</a></li>
           </ul>
         </nav>
 
@@ -241,7 +240,6 @@
       <nav aria-label="Enlaces de pie">
         <ul class="footer-links">
           <li><a :href="demoUrl">Probar SALI</a></li>
-          <li><a href="#contacto">Solicitar demo</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
@@ -257,7 +255,7 @@ import { reactive, ref } from 'vue';
 
 const mobileOpen = ref(false);
 
-const demoUrl = 'https://asistente-educativo-sali.vercel.app';
+const demoUrl = 'https://www.saliasistenteeducativo.site';
 const driveUrl = 'https://drive.google.com/drive/folders/14jt4USrqAt03RYeWelzmzx1ZJO1k-2Xi?usp=sharing';
 const whatsUrl = 'https://wa.me/573142802136';
 
@@ -277,20 +275,22 @@ const funcionalidades = [
 
 const pasos = [
   { label: 'WhatsApp Business', description: 'Canal principal de comunicación directo con padres y estudiantes.' },
-  { label: 'Automatización con Make + Evolution API', description: 'Orquestación de flujos y menús interactivos para respuestas rápidas.' },
+  { label: 'Automatización con n8n y Evolution API', description: 'Orquestación de flujos y menús interactivos para respuestas rápidas, desplegado con Dokploy en Hostinger.' },
   { label: 'Base de datos institucional', description: 'Usuarios, FAQs, solicitudes y datos oficiales para respuestas consistentes.' }
 ];
 
 const stack = [
-  { name: 'WhatsApp Business API', detail: 'Canal oficial y masivo para atención.' },
-  { name: 'Make (Integromat)', detail: 'Automatización de procesos y webhooks.' },
+  { name: 'WhatsApp Business', detail: 'Canal oficial y masivo para atención.' },
   { name: 'Evolution API', detail: 'Conectores robustos para continuidad del servicio.' },
+  { name: 'n8n', detail: 'Automatización de procesos y flujos.' },
+  { name: 'Dokploy', detail: 'Despliegue y gestión de aplicaciones simplificada.' },
+  { name: 'VPS en Hostinger', detail: 'Infraestructura dedicada para rendimiento y disponibilidad.' },
   { name: 'Bases de datos relacionales', detail: 'FAQs, usuarios, solicitudes e información institucional.' }
 ];
 
 const diferenciadores = [
   { title: 'Hecho para educación', description: 'Diseñado según valores y necesidades de la comunidad educativa.' },
-  { title: 'Continuidad operativa', description: 'Arquitectura con Evolution API + Make para alta disponibilidad.' },
+  { title: 'Continuidad operativa', description: 'Arquitectura con Evolution API, n8n y Dokploy sobre VPS en Hostinger para alta disponibilidad.' },
   { title: 'Escalable y adaptable', description: 'Listo para crecer y ajustarse a tu institución.' }
 ];
 
@@ -298,7 +298,7 @@ const faq = [
   { q: '¿Funciona por WhatsApp?', a: 'Sí. SALI opera en WhatsApp Business como canal principal para padres y estudiantes.' },
   { q: '¿Está disponible 24/7?', a: 'Sí. El asistente responde consultas a cualquier hora, todos los días.' },
   { q: '¿Qué tipo de preguntas responde?', a: 'Horarios, eventos, matrículas, reuniones, precios de uniformes, reglamentos y más.' },
-  { q: '¿Con qué tecnología está construido?', a: 'WhatsApp Business API, Make y Evolution API; respaldo en bases de datos relacionales.' },
+  { q: '¿Con qué tecnología está construido?', a: 'WhatsApp Business, Evolution API, n8n y Dokploy sobre VPS en Hostinger; respaldo en bases de datos relacionales.' },
   { q: '¿Cómo garantiza respuestas consistentes?', a: 'Mediante una base de preguntas y respuestas oficiales (FAQs) y datos institucionales actualizados.' }
 ];
 
